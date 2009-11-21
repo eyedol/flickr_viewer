@@ -1,0 +1,105 @@
+body {
+  background : #000;
+  color : #CCC;
+}
+
+#info {
+		width:500px;
+		margin:0 auto;
+		border:1px solid #333;
+		overflow:hidden;
+		padding:10px 15px;
+		position:relative;
+	}
+	
+  #info a {
+		color:#333;
+		display:block;
+		text-decoration:none;
+		top:50px;
+		z-index:100;
+	}
+	
+  #info	 a#move-left {
+			left:5px;
+      background : #FFF;
+      position :absolute;
+	}
+	
+  #info	a#move-right {
+			right:5px;
+      background : #FFF;
+      position:absolute;
+	}
+	
+  #info .mod {
+			overflow:hidden;
+	}
+	
+  #themes {
+		width:2000px;
+	}
+	
+  .mod {
+		width:485px;
+		overflow:hidden;
+		margin:0 auto;
+		position:relative;
+		zoom:1;
+	}
+
+  #themes li{
+    margin : 0;
+    background : #000;
+  }
+	#themes, #themes li {
+		margin:0;
+		overflow:hidden;
+		padding:0;
+	}
+	#themes li {
+		float:left;
+		height:90px;
+		margin:0 10px 0 0;
+		width:90px;
+		padding:0;
+	}
+	li img {
+    padding : 2px;
+		border:1px solid #fff;
+	}
+
+  /** layout **/
+  #page_wrapper {
+    width : 600px;
+    margin : 0 auto;
+    background : #000;
+    font-family : Trebuchet MS,Trebuchet,Verdana,Sans-serif;
+    color : #CCC;
+  }
+
+  #real_image {
+    margin : 0 auto;
+    width : 510px;
+    height : 382px;
+    padding : 5px 2px 0px 2px;
+    text-align : center;
+    border : 1px solid #333;
+  }
+
+  h3 {
+     text-align : center;
+     color : #AADD99;
+  }
+
+  #instructions {
+    line-height : 50px;
+    font-size : 11px;
+    text-align : center;
+  }
+
+  #footer {
+    line-height : 20px;
+    font-size : 9px;
+    text-align : center;
+  }
