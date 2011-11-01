@@ -32,7 +32,7 @@
       //$token = $token['user']['nsid'];
 
       // get NSID of the username
-      //$nsid = $token['user']['nsid'];
+      $nsid = $token['user']['nsid'];
       
       $user = $flickr->people_findByUsername($username);
 
@@ -41,9 +41,9 @@
       
       
       // get 20 images of public images of the user
-      $photos = $flickr->photos_search( array( 'tags'=>$tags,
-        'per_page'=> 200 ) );
-      //$photos = $flickr->people_getPublicPhotos($username, NULL, 36);
+      //$photos = $flickr->photos_search( array( 'tags'=>$tags,
+        //'per_page'=> 200 ) );
+      $photos = $flickr->people_getPublicPhotos($username, NULL, 36);
       
       
       // loop through the photos 
