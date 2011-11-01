@@ -16,14 +16,14 @@
      * @return - Array of images
      */
     public function get_images() {
-      $username = "73308752@N00";
+      $username = "";
       $photo_urls = "http://www.flickr.com/photos/eyedol/";
       $tags = "tedglobal2007";
       // create instance of phpFlickr class 
-      $flickr = new phpFlickr('7ffd3c4b9d9f3a486b67124d5b530f11');
+      $flickr = new phpFlickr('');
       
       //enable caching 
-      $flickr->enableCache("db","mysql://addhog_webdb:webusr_p455wd@localhost/addhog_webby");
+      $flickr->enableCache("");
       
       //authenticate
       //$flickr->auth();
