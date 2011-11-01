@@ -12,12 +12,12 @@ class GetFlickrImages {
     
     public function __construct(){
         
-        $this->username = "73308752@N00";
+        $this->username = "";
         
          // create instance of phpFlickr class 
-        $this->flickr = new phpFlickr('7ffd3c4b9d9f3a486b67124d5b530f11');     
+        $this->flickr = new phpFlickr('');     
         //enable caching 
-        //$this->flickr->enableCache("db","mysql://addhog_webdb:webusr_p455wd@localhost/addhog_webby");
+        $this->flickr->enableCache("");
 
     }
 
@@ -45,12 +45,9 @@ class GetFlickrImages {
         }
         // loop through the photos 
         foreach( $photos as $photo ) {
-            $this->images[] = "<li><a href=\"".$this->flickr->buildPhotoURL($photo)."\" class=\"floatbox\" rev=\"group:pix\">
+            $this->images[] = "<li><a href=\"".$this->flickr->buildPhotoURL($photo)."\" title=\"$photo[title] \"  class=\"floatbox\" data-fb-options=\"doSlideshow:true group:flickrviewer\" rev=\"group:flickrviewer\">
             <img border=\"0\" class=\"thumbnail\"  alt=\"$photo[title]\" title=\"$photo[title]\"
-            src=\"".$this->flickr->buildPhotoURL($photo,'Square')."\" 
-            onclick=\"get_image_id('".
-            $this->flickr->buildPhotoURL($photo).
-            "','$photo[title]')\"/></a></li>";
+            src=\"".$this->flickr->buildPhotoURL($photo,'Square')."\"/></a></li>";
             $owner = $this->flickr->people_getInfo( $photo['owner'] );
             $this->owner = $owner['username'];
          }

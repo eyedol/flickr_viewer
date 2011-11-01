@@ -21,6 +21,11 @@ globalOptions: {
   outerBorderColor: "#afb1b0",
   overlayColor: "#afb1b0",
   boxColor: "#090909",
+  captionPos: 'tl',
+  caption2Pos: 'bc',
+  controlsPos: 'br',
+  indexLinksPos: 'tr',
+  centerNav: true,
   outerBorder: 3
 },// childOptions are preferences to be applied only to secondary floatboxes.
 // Additional options can be added to this list,

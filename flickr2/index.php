@@ -53,7 +53,7 @@
         <div class="container">
             <div class="container">
                 <div class="pull-right">
-                    <a href="http://codedinafrica.org">
+                    <a href="http://codedinafrica.appspot.com/">
                         <img src="images/coded_in_africa.png" border="0" alt="Made in Ghana" /></a> &nbsp;
                     <img src="images/ghana_made.jpg" border="0" alt="Made in Ghana" />
                 </div> 
